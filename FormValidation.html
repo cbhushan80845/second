@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validate</title>
+    <link rel="stylesheet" href="./NewForm.css" />
+    <style></style>
+    <script>
+      const validate = (pw1, pw2) => {
+        pw1 = document.getElementById("pswd1");
+        pw2 = document.getElementById("pswd2");
+        const fname = document.getElementById("firstname");
+        const lname = document.getElementById("lastname");
+        if (pw1 != pw2) {
+          document.getElementById("message2").innerHTML =
+            "**Passwords are not same";
+          return false;
+        } else {
+          alert("succcess");
+          document.write("yes");
+        }
+
+        if (fname >= "") {
+          document.getElementById("blnkMessage").innerHTML =
+            "**fill the first name";
+          return false;
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <form name="f1" action="#" onsubmit="return validate()">
+      <center class="ce">Please sign up</center>
+      <input type="text" name="Name" placeholder="Enter your name" id="name" />
+      <input
+        type="text"
+        name="midlee name"
+        placeholder="Enter your middle name"
+        id="midlee name"
+      />
+      <input
+        type="text"
+        name="lastName"
+        placeholder="Enter your last name"
+        id="lastname"
+      />
+      <input
+        type="email"
+        name="Email"
+        placeholder="Enter your Email"
+        id="Email"
+      />
+      <input type="number" name="age" placeholder="Eneter your age" id="age" />
+
+      <div id="div1">
+        <label for="resume"> Resume</label>
+        <input type="file" name="resume" id="resume" />
+      </div>
+
+      <div id="div2">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Female</label>
+        <input type="radio" name="gender" id="male" value="male" />
+      </div>
+
+      <div id="div3">
+        <label for="Edu">Pass out year</label>
+        <input type="date " name="passsout" id="Edu" />
+      </div>
+      <div id="div9">
+        <select name="country" id="country">
+          <option value="choose yuour skill">choose your country</option>
+          <option value="India ">India</option>
+          <option value="America">America</option>
+        </select>
+      </div>
+
+      <div id="div6">
+        <input
+          type="password"
+          name="pswd1"
+          placeholder="Enter your password"
+          id="password"
+        />
+        <input
+          type="password"
+          name="pswd2"
+          placeholder="Enter your conform password"
+          id="password"
+        />
+      </div>
+      <div id="div7">
+        <button type="submit" id="btn_1" onclick="cbs()">sign up</button>
+        <button type="reset" id="btn_2">Cancle</button>
+      </div>
+    </form>
+  </body>
+</html>

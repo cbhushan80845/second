@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.ce{
+    color: white;
+    border: 10px;
+    text-decoration: solid ;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+    padding: 30px;
+    background-color: cadetblue;
+}
+input{
+    height: 40px;
+    padding-left: 10px;
+
+}
+#div1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 20px;
+    
+    /* color: white; */
+
+}
+#div2{
+    display: flex;
+    border: 1px solid rgb(178, 169, 169);
+    padding-left: 10px;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    /* color: rgb(229, 227, 227); */
+
+}
+#div3{
+    height: 60px;
+    display: flex;
+   
+    padding-left: 10px;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    /* color: white; */
+
+}
+/* #div{
+        color: rgb(229, 227, 227);
+        display: flex;
+        padding-left: 10px;
+        gap: 10px;
+        color: white;
+        font-size: 20px;
+} */
+#btn_1{
+    height: 40px;
+    color: white;
+    background-color: rgb(143, 36, 36);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+#btn_2{
+    height: 40px;
+    color: white;
+    background-color: rgb(177, 62, 96);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+h1{
+    color: white;
+}
+ #div6{
+    text-align: justify;
+    display: inline;
+    
+
+}
+#div7{
+    text-align: center;
+    display: inline;
+    margin: 1px;
+    padding-left:20px;
+    padding-top: 10px;
+    
+
+} 
+#div9{
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+} 

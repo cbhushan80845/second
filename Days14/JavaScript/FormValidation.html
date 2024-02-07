@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formValidation.css" />
+    <title>Form Validation</title>
+  </head>
+  <script>
+    var id = document.myform.id.value;
+    var name = document.myform.name.value;
+    var mobile = document.myform.mobile.value;
+    var money = document.myform.money.value;
+
+    if (id == CharacterData) {
+    }
+  </script>
+  <body>
+    <form
+      name="myform"
+      method="post"
+      action="abc.jsp"
+      onsubmit="return validateform()"
+    >
+      <div class="divC1">
+        <label for="id">Enter your id</label>
+        <input type="text" name="id" id="id" /><br />
+
+        <label for="name">Enter your name</label>
+        <input type="text" name="name" id="name" /><br />
+
+        <label for="mobile">Enter your mobile</label>
+        <input type="text" name="mobile" id="mobile" /><br />
+
+        <label for="money">Enter your money</label>
+        <input type="text" name="money" id="money" /><br />
+
+        <button>Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
